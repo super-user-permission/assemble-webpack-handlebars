@@ -4,6 +4,8 @@ Webpack Loader + Plugin for compiling Handlebars using Assemble.io
 
 Generates HTML pages using Handlebars templating and Assemble's power.
 
+**This plugin is compatible with updated version of webpack(4.0.0+) and sass.**
+
 # Install
 
 `npm install --save-dev assemble-webpack`
