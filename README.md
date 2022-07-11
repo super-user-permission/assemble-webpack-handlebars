@@ -1,4 +1,4 @@
-# 🔩 🛠 assemble-webpack
+# 🔩 🛠 assemble-webpack-handlebars
 
 Webpack Loader + Plugin for compiling Handlebars using Assemble.io
 
@@ -8,12 +8,12 @@ Generates HTML pages using Handlebars templating and Assemble's power.
 
 # Install
 
-`npm install --save-dev assemble-webpack`
+`npm install --save-dev assemble-webpack-handlebars`
 
 # Usage
 
 ```js
-const assembleWebpack = require('assemble-webpack');
+const assembleWebpack = require('assemble-webpack-handlebars');
 const handlebarsHelpers = require('handlebars-helpers');
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
         test: /\.(hbs)$/,
         use: [
           {
-            loader: 'assemble-webpack'
+            loader: 'assemble-webpack-handlebars'
           }
         ]
       }
@@ -65,7 +65,3 @@ module.exports = {
 **Note**: Until you link the required resources in your project's dependency graph, Webpack will NOT be able to track it for any changes during `Watch` mode or while running `Webpack-dev-server`.
 
 So even though `assembleWebpack` plugin generates the output during Webpack build, you still need to explicitly `import/require` the Handlebar resources somewhere in your project so that it can be re-compiled on the respective file changes.
-
-# Demo/Example
-
-You can refer https://github.com/raviroshan/assemble-webpack-demo
