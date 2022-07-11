@@ -8,7 +8,7 @@ function AssembleCompilePlugin(queries) {
 }
 
 AssembleCompilePlugin.prototype.apply = function myFn(compiler) {
-  compiler.plugin('done', stats => {
+  compiler.hooks.done.tap('done', stats => {
     handleAssemble({
       webpackConfig: compiler,
       queries: this.queries
