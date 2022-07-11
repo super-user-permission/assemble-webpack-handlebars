@@ -60,7 +60,7 @@ module.exports = {
 # Important Points
 
 - `assembleWebpack` is used as a plugin to provide the required configurations and to compile handlebar files using assembler.io during Webpack build.
-- We also need `assemble-webpack` as a loader to compile Handlebars files with extension `hbs`
+- We also need `assemble-webpack-handlebars` as a loader to compile Handlebars files with extension `hbs`
 
 **Note**: Until you link the required resources in your project's dependency graph, Webpack will NOT be able to track it for any changes during `Watch` mode or while running `Webpack-dev-server`.
 
